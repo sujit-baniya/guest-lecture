@@ -24,10 +24,8 @@ Route::get('/test-lecture', '\App\Http\Controllers\TestLecture@test');
 
 
 Route::get('/test-lecture/{id}', function ($id) {
-    return 'Hello ' . $id;
-})->middleware('lecture');
-
-
+    return 'Hello Friend' . $id;
+});
 
 Route::post('/test-lecture/{id}', function ($id) {
     return 'POST Hello ' . $id;
